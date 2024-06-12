@@ -1,14 +1,14 @@
 plugins {
-    alias(libs.plugins.androidApplication)
-    alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
 }
 
 android {
-    namespace = "com.example.permissionsphilliplackner"
+    namespace = "com.example.androidotpvalidator"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.permissionsphilliplackner"
+        applicationId = "com.example.androidotpvalidator"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -48,10 +48,4 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-    // ViewModel && LiveData
-    implementation(libs.androidx.lifecycle.viewmodel.ktx)
-    implementation(libs.androidx.lifecycle.livedata.ktx)
-    implementation(libs.androidx.activity.ktx)
-    implementation(libs.androidx.fragment.ktx)
 }
